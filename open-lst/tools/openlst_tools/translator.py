@@ -328,6 +328,8 @@ class Translator(object):
 
         if tokens[0] == 'lst':
             rv += LST
+        elif tokens[0] == 'lst_relay':
+            rv += LST_RELAY
         else:
             raise ValueError("don't know system '%r'" % s)
         rv.extend(CMD_STRING_MAP[tokens[1]].tokens_to_bytes(tokens[2:]))
