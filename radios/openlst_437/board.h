@@ -27,7 +27,7 @@
 #define CONFIG_CAPABLE_RF_TX 1
 
 // Enable the power supply sense lines AN0 and AN1
-#define ADCCFG_CONFIG 0b00000011
+#define ADCCFG_CONFIG 0b00000000
 
 #define RADIO_RANGING_RESPONDER 1
 

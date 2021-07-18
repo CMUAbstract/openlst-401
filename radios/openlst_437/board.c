@@ -39,7 +39,7 @@ void board_init(void) {
 	   toggled appropriately by the radio core whenever the radio state
 	   changes. */
         // P1_7 = LNA_PD (asserted high in TX) = LST_TX_MODE
-        IOCFG2 = IOCFG2_GDO2_INV_ACTIVE_HIGH | IOCFG_GDO_CFG_PA_PD;
+        IOCFG2 = IOCFG2_GDO2_INV_ACTIVE_LOW | IOCFG_GDO_CFG_PA_PD;
         // P1_6 = PA_PD  (asserted low in RX) = !LST_RX_MODE
         IOCFG1 = IOCFG1_GDO1_INV_ACTIVE_LOW | IOCFG_GDO_CFG_LNA_PD;
         // No special function for P1_5 (IOCFG0)
