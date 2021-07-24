@@ -39,6 +39,7 @@ BOOTLOADER_ERASE = '\x0c'
 BOOTLOADER_WRITE_PAGE = '\x02'
 BOOTLOADER_ACK = '\x01'
 BOOTLOADER_NACK = '\x0f'
+BOOTLOADER_JUMP = '\x0b'
 ASCII = '\x11'
 AES_KEY_SIZE = 16
 
@@ -253,6 +254,7 @@ COMMANDS = [
     Command("bootloader_ack", BOOTLOADER_ACK,
             UInt8Argument("reason"), optional_args=1),
     Command("bootloader_nack", BOOTLOADER_NACK),
+    Command("bootloader_jump", BOOTLOADER_JUMP),
     Command("bootloader_ping", BOOTLOADER_PING),
     Command("bootloader_erase", BOOTLOADER_ERASE,
             UInt8Argument("status"), optional_args=1),
