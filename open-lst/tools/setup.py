@@ -60,7 +60,7 @@ setup(name='openlst_tools',
       packages=['openlst_tools'],
       install_requires=[
           "blessed>=1.15.0,<2.0.0",
-          "pyzmq>=13.1.0",
-          "pycrypto>=2.6",
-          "pyserial",
-          "six"])
+          "pyzmq>=13.1.0,<19.0.2",
+          "pycrypto==2.6.1",
+          "pyserial==3.4",
+          "six==1.15.0"])
