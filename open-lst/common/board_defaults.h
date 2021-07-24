@@ -200,13 +200,13 @@
 #define RF_FSCTRL0 0x00
 #endif
 #ifndef RF_FREQ2
-#define RF_FREQ2 0x10
+#define RF_FREQ2 0x0F
 #endif
 #ifndef RF_FREQ1
-#define RF_FREQ1 0x2F
+#define RF_FREQ1 0x74
 #endif
 #ifndef RF_FREQ0
-#define RF_FREQ0 0x69
+#define RF_FREQ0 0x61
 #endif
 // The defaults here are the CC1110 hard defaults
 #ifndef RF_SYNC_WORD1
